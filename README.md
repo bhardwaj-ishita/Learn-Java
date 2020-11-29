@@ -13,6 +13,10 @@ And this was high time that I pick up something and complete it.
 Hence I've decided to document what I've learnt and put it out. 
 Let github be a silent audience of this project for myself. 
 
-The project execution environment is JavaSE-14. 
+I started with JavaSE-14 library.
+But a lot of functions are not available in JavaSE-14. 
+So I'll recommend you to add Java 1.8 library.
+Even Java 11 will work. But it still might lack in a few functions.
+So I'll say either go with Java 1.8 or Java 1.7.
 And these files are writen on Eclipse itself with comments to summarize the class itself.
   

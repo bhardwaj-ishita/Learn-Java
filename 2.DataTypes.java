@@ -63,7 +63,40 @@ public class DataTypes {
 		long bigNUM = 123_456_789;
 		//use underscore to write big numbers
 		
-	
+		//MORE INFO
+		int myValue = 10000;
+
+       		int myMinIntValue = Integer.MIN_VALUE;
+        	int myMaxIntValue = Integer.MAX_VALUE;
+       		//wrapper class is for all 8 primitive types
+        	//int, long, shor, double, float, char, byte, boolean
+        	//helps in performing operations on the type
+
+        	System.out.println("Int Min value = " + myMinIntValue);
+        	System.out.println("Int Max Value = " + myMaxIntValue);
+
+        	System.out.println(myMaxIntValue + 1);
+        	//overflow: by adding value larger than the max value
+        	//the computer tried to fit it and took it to negatives
+        	//same happens for (min value - 1); this is called underflow
+
+        	//2_147_483_647
+
+        	//size and width of primitive types
+        	/*
+        	byte =  bits
+		short = 16 bits
+       		integer = 32 bits
+        	long = 64 bit
+        	*/
+
+        	long myLongValue = 100L;
+       		long intMaxValue = 2_147_483_647_657;
+        	long intLongValue = 2_147_483_647_657L;
+        	//any whole number is by default taken as integer
+        	//that's why you need to specify if a number taken is long
+        	//by putting an L at the end
+		
 	}
 	
 

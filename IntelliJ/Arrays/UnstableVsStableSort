@@ -1,0 +1,25 @@
+This distinction of Stable and Unstable sort occur when there are
+duplicate values in the array.
+
+unsortedArray = {5,9,3,nine,8,4)
+Just assume 9, nine both are integers. just to differentiate
+between the two 9s.
+
+UNSTABLE SORT:
+In an unstable sort after sorting and swapping if the 9 ends up
+AFTER the 'nine', then it is an unstable sort.
+Which will happen in many sorting algorithms.
+sortedArray = {3,4,5,8,nine,9}
+
+STABLE SORT:
+In a stable sort after sorting and swapping if the 9 still ends
+up BEFORE the 'nine', then it is a stable sort.
+This sort is preferred.
+sortedArray = {3,4,5,8,9,nine}
+
+Creates problem in some situations like Objects.
+Bubble sort = stable sort(only swap when a number is greater than adjacent one)
+array[i] > array[i+1] stable sort
+array[i] >= array[i+1] unstable sort
+
+Selection Sort = unstable sort

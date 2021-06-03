@@ -1,3 +1,5 @@
+package com.company;
+
 public class StackLL {
     private static StackNode root;//pointer to the top of the stack
 

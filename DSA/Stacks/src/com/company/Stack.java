@@ -1,3 +1,4 @@
+package com.company;
 //BACKED BY ARRAYS
 public class Stack {
     static final int MAX = 1000;//a static value of the stack

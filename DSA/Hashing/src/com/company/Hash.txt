@@ -1,0 +1,44 @@
+HASH TABLE:
+Abstract Data type
+provides access to data using keys
+keys may not necessarily be INTEGERS
+optimized for retrieval (only when you know the key)
+
+in the array INDEX --> KEY of the data
+             ELEMENT --> VALUES of the data
+
+it's not important for the data types of the map keys to be the same
+AKA Dictionaries
+    Maps
+    Lookup tables
+    Associative Arrays
+
+HASHING:
+conversion of map keys to integer is called hashing
+map keys can be of any data type
+    but after conversion they all are integers
+        because the hashed keys are stored in an array and array stores only integers
+the inbuilt hash function used in java to hash the keys is Object.hashCode()
+
+COLLISION:
+many hashed keys might be same. This is called collision
+
+LOAD FACTORS:
+tells how full the hash table is
+== size/capacity
+basically decides when to restrict the array from backing the hash table
+now, we don't want LF too low (empty spaces)
+     we don't want LF too high (likelihood of collision)
+     WE WANT A BALANCE TO BE CREATED
+LF is used to determine time complexity of retrieval
+
+2 Processes:
+1) Hashing
+-produce key
+-convert key to int
+-store the key data at the same magnitude index of the array
+
+2) Retrieval
+-provide the key
+-convert key to int
+-retrieve the key value stored at the index = hashed code of the key

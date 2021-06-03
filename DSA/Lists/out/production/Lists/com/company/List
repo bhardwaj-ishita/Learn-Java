@@ -1,0 +1,76 @@
+List is an abstract data type
+It is an interface (java.util.list)
+
+Abstract data types:
+1. not a concrete data structure
+2. doesn't tell how data is organised
+
+interface  LIST
+implementation ARRAYLIST LINKEDLIST
+
+
+ARRAY LIST
+it can dynamically be resized
+
+ArrayList<Integer> grades = new ArrayList<Integer>();
+Integer : a class is expected; it is a wrapper around int
+<> put a type in this
+
+grades.add(5); //value is added
+to put values in an arraylist
+
+grades.get(0); //index is added
+to get the value at any index
+
+grades.set(0,10); //index,value
+to put a certain value at a specific index
+
+grades.size(); //to know how many elements are in the array
+
+//add interface working
+private void add(E e, Object[] elementData, int s) {
+        if (s == elementData.length)  //see's if the size full
+            elementData = grow();       //if yes then grow the capacity of the list
+        elementData[s] = e;             //then add the object
+        size = s + 1;                   //increment the size
+    }
+
+
+SINGLY LINKED LIST
+each item is aware of next item in list
+store integer value and reference to the next integer in the list
+in arrays elements are completely unaware of each other
+
+each item is called NODE
+first item is Head of the list
+And the last item is a null node
+
+should know the first node and then iterate to the next
+stop the iterator when reached null
+
+-to create a new node(head)
+1. create a new node "Bill"
+2. assign "Jane" to the next field
+3. Assign head to "Bill"
+it is O(1) time complexity: doesn't matter how many items are there in the list
+we are going to do same number of steps for each item in the list
+
+-to delete the head node
+1. Assign "Bill" to a temp variable "removeNode"
+2. assign head to "Jane" hence automatically removed Bill
+3. return "removeNode"
+Or can point the reference of Bill to null
+O(1) time complexity
+
+use liked list whenever we want to insert or remove items in the front of the list
+it grows without resizing it
+if memory of your computer is tight then it might be a problem
+because whenever you kee
+only bounded by the memory you have
+you have to store the extra field i.e null field with every value
+
+addToFront()
+printList()
+size
+isEmpty()
+removeItem();
